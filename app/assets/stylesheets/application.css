@@ -70,9 +70,15 @@ body {
   background: #2d4259;
 }
 
-p.alert {
-  
-}
+.alert {
+
+    z-index: 1000 !important;
+    top: 55% !important;
+    width: 80% !important;
+    left: 10% !important;
+    text-align: center !important;
+    position: fixed !important;
+  }
 
 .register-title {
   width: 400px;
@@ -245,4 +251,34 @@ input {
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+
+/* Animated */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
