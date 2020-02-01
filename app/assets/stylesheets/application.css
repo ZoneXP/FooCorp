@@ -282,3 +282,8 @@ input {
 .fadeIn {
   animation-name: fadeIn;
 }
+
+.margin-top {
+  margin-top: 30px;
+  margin-left: 40% !important;
+}

@@ -1,19 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Id branch:</strong>
-  <%= @branch.id_branch %>
-</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @branch.name %>
-</p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @branch.address %>
-</p>
+<div class="container margin-top">
 
-<%= link_to 'Edit', edit_branch_path(@branch) %> |
-<%= link_to 'Back', branches_path %>
+  <div class="row">
+
+    <div class="col-md-5 col-md-offset-3">
+      <p>
+        <strong>Id branch:</strong>
+        <%= @branch.id_branch %>
+      </p>
+
+      <p>
+        <strong>Name:</strong>
+        <%= @branch.name %>
+      </p>
+
+      <p>
+        <strong>Address:</strong>
+        <%= @branch.address %>
+      </p>
+
+      <%= link_to 'Edit', edit_branch_path(@branch) %> |
+      <%= link_to 'Back', branches_path %>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
