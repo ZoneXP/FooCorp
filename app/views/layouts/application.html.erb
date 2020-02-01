@@ -14,12 +14,12 @@
 
   <body>
 
-    <% if notice %>
+    <!-- <% if notice %>
       <p class="alert alert-success animated fadeIn"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-danger animated fadeIn"><%= alert %></p>
-    <% end %>
+    <% end %> -->
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,6 +34,17 @@
         <%= link_to "Register", home_index_path, class: "nav-link" %>
 
       </li>
+
+      <% if user_signed_in? %>
+        <li class="nav-item active">
+          <%= link_to "Employees", employees_path, class: "nav-link" %>
+
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Branches", branches_path, class: "nav-link" %>
+
+        </li>
+      <% end %>
       <!--<li class="nav-item">
         <a class="nav-link" href="#">Admin</a>
       </li>-->
@@ -62,8 +73,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <script src="" crossorigin="anonymous" ></script>
+    <!-- <script src="/javascript/script.js" crossorigin="anonymous" ></script> -->
 
+    <!-- <script>
+    $(function() {
+      setTimeout(function() {
+         $(".alert:visible").fadeOut();
+      },2000);
+    })
+    </script> -->
 
 
   </body>
